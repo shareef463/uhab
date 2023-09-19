@@ -68,6 +68,6 @@ if (payload.affectedRows > 0 ) {
 } else {}]]></ee:set-payload>
 			</ee:message>
 		</ee:transform>
-		<logger level="INFO" doc:name="End Log" doc:id="61cc0a16-70de-4f0b-8653-de1c90af5021" message='transactionID: #[vars.transactionId], correlationID: #[vars.correlationId], message: "Completed update covid case flow", payload: #[payload]' />
+		<logger level="INFO" doc:name="End Log" doc:id="61cc0a16-70de-4f0b-8653-de1c90af5021" message='transactionID: #[vars.transactionId], correlationID: #[vars.correlationId], message: "Completed update covid cases flow", payload: #[payload]' />
     </flow>
 	</mule>
