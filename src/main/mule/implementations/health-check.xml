@@ -15,7 +15,4 @@ output application/json
   message: "Uhub-sapi is alive and kicking"
 }]]></ee:set-payload>
             </ee:message>
-        </ee:transform>
-    
-</flow>
 	</mule>
