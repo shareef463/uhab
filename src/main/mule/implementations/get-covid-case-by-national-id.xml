@@ -51,7 +51,9 @@ payload map (covidCase, indexOfCovidCase) -> {
 }]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
-			</when>
+				<logger level="INFO" doc:name="Logger" doc:id="77824ea1-9874-46e2-a9e8-fbe9a38001f7" message="#[payload]"/>
+			
+</when>
 			<otherwise >
 				<raise-error doc:name="Raise CUSTOM:CASE_NOT_FOUND Error" doc:id="c109b6a5-f2c3-4bf3-a2a5-a3ee2ecf0901" type="CUSTOM:CASE_NOT_FOUND" description="The server has not found anything matching the Request-URI" />
 			</otherwise>
