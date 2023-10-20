@@ -17,7 +17,8 @@
             </ee:variables>
         </ee:transform>
         <logger level="INFO" doc:name="Logger" doc:id="a689bf37-7c5a-4b51-81ef-fc05bdbb045a" message="#[message.attributes.headers]" />
-        <apikit:router config-ref="uhub-sapi-config" />
+        <logger level="INFO" doc:name="Logger" doc:id="ef4f5635-411d-4f01-92ce-955617ddceb1" message="dummy logger is added"/>
+		<apikit:router config-ref="uhub-sapi-config" />
         <error-handler ref="global-error-handler" />
     </flow>
     <flow name="uhub-sapi-console">
