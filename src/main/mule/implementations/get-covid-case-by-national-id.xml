@@ -51,7 +51,6 @@ payload map (covidCase, indexOfCovidCase) -> {
 }]]></ee:set-payload>
 					</ee:message>
 				</ee:transform>
-				<logger level="INFO" doc:name="Logger" doc:id="77824ea1-9874-46e2-a9e8-fbe9a38001f7" message="#[payload]"/>
 			
 </when>
 			<otherwise >
