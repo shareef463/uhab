@@ -4,7 +4,7 @@
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>uhub-sapi</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1</version>
 	<packaging>mule-application</packaging>
 
 	<name>uhub-sapi</name>
@@ -34,6 +34,14 @@
 						<sharedLibrary>
 							<groupId>com.mycompany</groupId>
 							<artifactId>ojdbc6-11.2.0.4</artifactId>
+						</sharedLibrary>
+						<sharedLibrary>
+							<groupId>com.mycompany</groupId>
+							<artifactId>jrt-fs</artifactId>
+						</sharedLibrary>
+						<sharedLibrary>
+							<groupId>com.mycompany</groupId>
+							<artifactId>ojdbc6</artifactId>
 						</sharedLibrary>
 					</sharedLibraries>
 					<classifier>---- select project type ----</classifier>
@@ -77,6 +85,16 @@
 			<artifactId>mule-secure-configuration-property-module</artifactId>
 			<version>1.2.5</version>
 			<classifier>mule-plugin</classifier>
+		</dependency>
+		<dependency>
+			<groupId>com.mycompany</groupId>
+			<artifactId>jrt-fs</artifactId>
+			<version>0.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.mycompany</groupId>
+			<artifactId>ojdbc6</artifactId>
+			<version>0.1</version>
 		</dependency>
 	</dependencies>
 
